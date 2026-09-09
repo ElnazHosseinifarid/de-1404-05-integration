@@ -1,0 +1,42 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Docker backups
+*.backup
+*.bak
+docker-compose.yml.backup*
+docker-compose.*.backup*
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+de_venv/
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+
+# Database data
+postgres_data/
+mongodb_data/
+clickhouse_data/
+elasticsearch_data/
+kafka_data/
+
+# Grafana
+grafana_data/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+docker-compose.yml.before_git
